@@ -1,7 +1,28 @@
 ---
 - name: download hub tgz
-  get_url:
+  get_url: >-
     url='{{hub_tgz_url}}'
     dest='/tmp/{{hub_tgz}}'
     mode=644
+
+- name: unarchive to /opt
+  unarchive: >-
+    copy=no
+    src='/tmp/{{hub_tgz}}'
+    dest='/opt'
+
+- name: link /opt/hub
+  file: >-
+    src='/opt/hub-{{hub_platform}}-{{hub_ver}}'
+    dest='/opt/hub'
+    state=link
+
+- name: link hub completions
+  file: >-
+    src=/opt/hub/etc/hub.bash_completion.sh
+    dest=/etc/bash_completion.d/hub.bash_completion.sh
+    state=link
+
+- name: include hub in the default path...
+  copy: src='etc/profile.d/hub.sh' dest='/etc/profile.d/hub.sh' mode=644
 
