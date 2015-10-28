@@ -1,0 +1,7 @@
+---
+- name: download hub tgz
+  get_url:
+    url='{{hub_tgz_url}}'
+    dest='/tmp/{{hub_tgz}}'
+    mode=644
+

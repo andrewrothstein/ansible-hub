@@ -1,0 +1,3 @@
+---
+hub_tgz : 'hub-{{hub_platform}}-{{hub_ver}}.tar.gz'
+hub_tgz_url : 'https://github.com/github/hub/releases/download/v{{hub_ver}}/{{hub_tgz}}'
