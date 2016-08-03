@@ -1,28 +1,42 @@
 ---
 - name: download hub tgz
+  become: yes
+  become_user: root
   get_url: >-
-    url='{{hub_tgz_url}}'
-    dest='/tmp/{{hub_tgz}}'
-    mode=644
+    url={{hub_tgz_url}}
+    dest=/tmp/{{hub_tgz}}
+    mode=0644
 
 - name: unarchive to /opt
+  become: yes
+  become_user: root
   unarchive: >-
     copy=no
-    src='/tmp/{{hub_tgz}}'
-    dest='/opt'
+    src=/tmp/{{hub_tgz}}
+    dest=/opt
+    creates=/opt/hub-{{hub_platform}}-{{hub_ver}}
 
 - name: link /opt/hub
+  become: yes
+  become_user: root
   file: >-
-    src='/opt/hub-{{hub_platform}}-{{hub_ver}}'
-    dest='/opt/hub'
+    src=/opt/hub-{{hub_platform}}-{{hub_ver}}
+    dest=/opt/hub
     state=link
 
 - name: link hub completions
+  become: yes
+  become_user: root
   file: >-
     src=/opt/hub/etc/hub.bash_completion.sh
     dest=/etc/bash_completion.d/hub.bash_completion.sh
     state=link
 
 - name: include hub in the default path...
-  copy: src='etc/profile.d/hub.sh' dest='/etc/profile.d/hub.sh' mode=644
+  become: yes
+  become_user: root
+  copy: >
+    src=etc/profile.d/hub.sh
+    dest=/etc/profile.d/hub.sh
+    mode=0644
 
