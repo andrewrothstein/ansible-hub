@@ -1,5 +1,5 @@
 ---
-- name: download hub tgz
+- name: download archive
   become: yes
   become_user: root
   get_url: >-
@@ -7,7 +7,7 @@
     dest=/tmp/{{hub_tgz}}
     mode=0644
 
-- name: unarchive to /opt
+- name: unarchive to install parent dir
   become: yes
   become_user: root
   unarchive: >-
@@ -15,6 +15,18 @@
     src=/tmp/{{hub_tgz}}
     dest={{hub_install_parent_dir}}
     creates={hub_install_dir}}
+
+- name: ensure target directories exist
+  become: yes
+  become_user: root
+  with_items:
+    - '{{hub_install_parent_dir}}/bin'
+    - '{{hub_install_parent_dir}}/share/man/man1'
+    - /etc/bash_completion.d
+  file: >-
+    path={{item}}
+    state=directory
+    mode=0755
 
 - name: link up
   become: yes
