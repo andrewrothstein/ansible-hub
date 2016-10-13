@@ -1,4 +1,4 @@
 ---
-hub_ver : '2.2.3'
-hub_platform : 'linux-amd64'
-
+hub_ver : '2.2.9'
+hub_platform : linux-amd64
+hub_install_parent_dir: /usr/local

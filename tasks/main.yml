@@ -13,30 +13,26 @@
   unarchive: >-
     copy=no
     src=/tmp/{{hub_tgz}}
-    dest=/opt
-    creates=/opt/hub-{{hub_platform}}-{{hub_ver}}
+    dest={{hub_install_parent_dir}}
+    creates={hub_install_dir}}
 
-- name: link /opt/hub
+- name: link up
   become: yes
   become_user: root
+  with_items:
+    - bin/hub
+    - share/man/man1/hub.1
   file: >-
-    src=/opt/hub-{{hub_platform}}-{{hub_ver}}
-    dest=/opt/hub
+    src={{hub_install_dir}}/{{item}}
+    dest={{hub_install_parent_dir}}/{{item}}
     state=link
 
 - name: link hub completions
   become: yes
   become_user: root
+  with_items:
+    - hub.bash_completion.sh
   file: >-
-    src=/opt/hub/etc/hub.bash_completion.sh
-    dest=/etc/bash_completion.d/hub.bash_completion.sh
+    src={{hub_install_dir}}/etc/{{item}}
+    dest=/etc/bash_completion.d/{{item}}
     state=link
-
-- name: include hub in the default path...
-  become: yes
-  become_user: root
-  copy: >
-    src=etc/profile.d/hub.sh
-    dest=/etc/profile.d/hub.sh
-    mode=0644
-

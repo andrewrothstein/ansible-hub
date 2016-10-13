@@ -3,3 +3,5 @@ hub_tgz : 'hub-{{hub_platform}}-{{hub_ver}}.tgz'
 
 # https://github.com/github/hub/releases/download/v2.2.2/hub-linux-amd64-2.2.2.tgz
 hub_tgz_url : 'https://github.com/github/hub/releases/download/v{{hub_ver}}/{{hub_tgz}}'
+
+hub_install_dir: '{{hub_install_parent_dir}}/hub-{{hub_platform}}-{{hub_ver}}'
