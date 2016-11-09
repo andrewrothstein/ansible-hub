@@ -1,0 +1,5 @@
+---
+hub_privilege_escalate: False
+hub_installer: pkg
+hub_pkgs:
+  - hub

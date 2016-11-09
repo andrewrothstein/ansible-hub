@@ -2,3 +2,5 @@
 hub_ver : '2.2.9'
 hub_platform : linux-amd64
 hub_install_parent_dir: /usr/local
+hub_privilege_escalate: True
+hub_installer: tgz
