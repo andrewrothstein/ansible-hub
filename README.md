@@ -1,5 +1,5 @@
 andrewrothstein.hub
-=========
+===================
 
 Installs GitHub's hub command line program
 
@@ -21,10 +21,11 @@ See [meta/main.yml](meta/main.yml)
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-	     - andrewrothstein.hub
-
+```yml
+- hosts: servers
+  roles:
+    - andrewrothstein.hub
+```
 
 License
 -------
@@ -34,4 +35,4 @@ MIT
 Author Information
 ------------------
 
-Andrew Rothstein andrew.rothstein@gmail.com
+Andrew Rothstein <andrew.rothstein@gmail.com>
