@@ -1,7 +1,8 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-hub.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-hub)
 andrewrothstein.hub
 ===================
 
-Installs GitHub's hub command line program
+Installs GitHub's [hub](https://github.com/github/hub)
 
 Requirements
 ------------
