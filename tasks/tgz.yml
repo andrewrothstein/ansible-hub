@@ -45,7 +45,7 @@
     - hub.bash_completion.sh
   file:
     src: '{{hub_install_dir}}/etc/{{item}}'
-    dest: '{{hub_bash_completion_d}}/etc/bash_completion.d/{{item}}'
+    dest: '{{hub_bash_completion_d}}/{{item}}'
     state: link
 
 - name: cleanup
