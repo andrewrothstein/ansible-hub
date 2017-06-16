@@ -2,19 +2,19 @@
 - name: download archive
   become: yes
   become_user: root
-  get_url: >-
-    url={{hub_tgz_url}}
-    dest=/tmp/{{hub_tgz}}
-    mode=0644
+  get_url:
+    url: '{{hub_tgz_url}}'
+    dest: /tmp/{{hub_tgz}}
+    mode: 0644
 
 - name: unarchive to install parent dir
   become: yes
   become_user: root
-  unarchive: >-
-    copy=no
-    src=/tmp/{{hub_tgz}}
-    dest={{hub_install_parent_dir}}
-    creates={hub_install_dir}}
+  unarchive:
+    copy: no
+    src: /tmp/{{hub_tgz}}
+    dest: '{{hub_install_parent_dir}}'
+    creates: '{hub_install_dir}}'
 
 - name: ensure target directories exist
   become: yes
@@ -23,10 +23,10 @@
     - '{{hub_install_parent_dir}}/bin'
     - '{{hub_install_parent_dir}}/share/man/man1'
     - /etc/bash_completion.d
-  file: >-
-    path={{item}}
-    state=directory
-    mode=0755
+  file:
+    path: '{{item}}'
+    state: directory
+    mode: 0755
 
 - name: link up
   become: yes
@@ -34,17 +34,25 @@
   with_items:
     - bin/hub
     - share/man/man1/hub.1
-  file: >-
-    src={{hub_install_dir}}/{{item}}
-    dest={{hub_install_parent_dir}}/{{item}}
-    state=link
+  file:
+    src: '{{hub_install_dir}}/{{item}}'
+    dest: '{{hub_install_parent_dir}}/{{item}}'
+    state: link
 
 - name: link hub completions
   become: yes
   become_user: root
   with_items:
     - hub.bash_completion.sh
-  file: >-
-    src={{hub_install_dir}}/etc/{{item}}
-    dest=/etc/bash_completion.d/{{item}}
-    state=link
+  file:
+    src: '{{hub_install_dir}}/etc/{{item}}'
+    dest: /etc/bash_completion.d/{{item}}
+    state: link
+
+- name: cleanup
+  become: yes
+  become_user: root
+  when: hub_cleanup
+  file:
+    path: /tmp/{{hub_tgz}}
+    state: absent

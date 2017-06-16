@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-hub.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-hub)
 andrewrothstein.hub
 ===================
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-hub.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-hub)
 
 Installs GitHub's [hub](https://github.com/github/hub)
 

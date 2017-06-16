@@ -4,3 +4,4 @@ hub_platform : linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
 hub_installer: tgz
+hub_cleanup: False
