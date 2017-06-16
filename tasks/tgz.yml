@@ -22,7 +22,6 @@
   with_items:
     - '{{hub_install_parent_dir}}/bin'
     - '{{hub_install_parent_dir}}/share/man/man1'
-    - /etc/bash_completion.d
   file:
     path: '{{item}}'
     state: directory
@@ -46,7 +45,7 @@
     - hub.bash_completion.sh
   file:
     src: '{{hub_install_dir}}/etc/{{item}}'
-    dest: /etc/bash_completion.d/{{item}}
+    dest: '{{hub_bash_completion_d}}/etc/bash_completion.d/{{item}}'
     state: link
 
 - name: cleanup
