@@ -1,20 +1,35 @@
 ---
-- name: download archive
+- name: check for existing install...
   become: yes
-  become_user: root
-  get_url:
-    url: '{{hub_tgz_url}}'
-    dest: /tmp/{{hub_tgz}}
-    mode: 0644
+  stat:
+    path: '{{hub_install_dir}}'
+  changed_when: False
+  register: hub_binary
+- when: not hub_binary.stat.exists
+  block:
+    - name: download archive
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{hub_tgz_url}}'
+        dest: /tmp/{{hub_tgz}}
+        mode: 0644
 
-- name: unarchive to install parent dir
-  become: yes
-  become_user: root
-  unarchive:
-    copy: no
-    src: /tmp/{{hub_tgz}}
-    dest: '{{hub_install_parent_dir}}'
-    creates: '{hub_install_dir}}'
+    - name: unarchive to install parent dir
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{hub_tgz}}
+        dest: '{{hub_install_parent_dir}}'
+        creates: '{hub_install_dir}}'
+  always:
+    - name: cleanup...
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{hub_tgz}}
+        state: absent
 
 - name: ensure target directories exist
   become: yes
@@ -47,11 +62,3 @@
     src: '{{hub_install_dir}}/etc/{{item}}'
     dest: '{{hub_bash_completion_d}}/{{item}}'
     state: link
-
-- name: cleanup
-  become: yes
-  become_user: root
-  when: hub_cleanup
-  file:
-    path: /tmp/{{hub_tgz}}
-    state: absent

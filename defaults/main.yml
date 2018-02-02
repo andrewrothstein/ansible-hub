@@ -4,5 +4,9 @@ hub_platform : linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
 hub_installer: tgz
-hub_cleanup: False
 hub_bash_completion_d: /etc/bash_completion.d
+
+hub_checksums:
+  '2.2.9': 
+    # https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz
+    linux-amd64: sha256:5867647071007add582f911867fb4973354c51690ac20aecb2e73be7440875a3
