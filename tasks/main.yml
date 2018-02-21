@@ -10,4 +10,4 @@
       paths:
         - '{{role_path}}/vars'
 
-- include_tasks: '{{hub_installer}}.yml'
+- include_tasks: "{{hub_installer}}.yml"
