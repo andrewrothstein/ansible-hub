@@ -1,5 +1,5 @@
 ---
-hub_ver : '2.5.0'
+hub_ver : '2.5.1'
 hub_platform : linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -19,3 +19,6 @@ hub_checksums:
   '2.5.0': 
     # https://github.com/github/hub/releases/download/v2.5.0/hub-linux-amd64-2.5.0.tgz
     linux-amd64: sha256:140f1a8f1e5110fa2df21188904bb536267aa80e695bb7d125adc517152afb55
+  '2.5.1':
+    # https://github.com/github/hub/releases/download/v2.5.1/hub-linux-amd64-2.5.1.tgz
+    linux-amd64: sha256:eee7cb455e1ab34aa3b1eb4afe0f44a31af70cf4d3289fad4e124c7c0cc7016d
