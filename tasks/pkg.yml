@@ -1,8 +1,8 @@
 ---
 - name: installing hub pkgs...
-  become: '{{hub_privilege_escalate}}'
+  become: '{{ hub_privilege_escalate }}'
   become_user: root
-  with_items: '{{hub_pkgs}}'
+  with_items: '{{ hub_pkgs }}'
   package:
-    name: '{{item}}'
+    name: '{{ item }}'
     state: present

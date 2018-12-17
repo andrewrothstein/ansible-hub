@@ -1,7 +1,7 @@
 ---
-hub_tgz: 'hub-{{hub_platform}}-{{hub_ver}}.tgz'
+hub_tgz: 'hub-{{ hub_platform }}-{{ hub_ver }}.tgz'
 
-hub_tgz_url: 'https://github.com/github/hub/releases/download/v{{hub_ver}}/{{hub_tgz}}'
-hub_checksum: '{{hub_checksums[hub_ver][hub_platform]}}'
+hub_tgz_url: 'https://github.com/github/hub/releases/download/v{{ hub_ver }}/{{ hub_tgz }}'
+hub_checksum: '{{ hub_checksums[hub_ver][hub_platform] }}'
 
-hub_install_dir: '{{hub_install_parent_dir}}/hub-{{hub_platform}}-{{hub_ver}}'
+hub_install_dir: '{{ hub_install_parent_dir }}/hub-{{ hub_platform }}-{{ hub_ver }}'
