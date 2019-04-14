@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.8.4'
+hub_ver: '2.11.1'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -31,3 +31,13 @@ hub_checksums:
   '2.8.4':
     # https://github.com/github/hub/releases/download/v2.8.4/hub-linux-amd64-2.8.4.tgz
     linux-amd64: sha256:b813898e1a41f2684fa06ad93b9521e93825bf0301ea11749c6c421f89286fc9
+  '2.11.1':
+    darwin-amd64: sha256:82fe4367302ccccd0ef4a79c927ba801ee2595f48e12f702a4b5b54f97e0450c
+    freebsd-386: sha256:ccde0d0543827c396bc3489d1f2d705873062e12f3d4f04f1122ed77736c6616
+    freebsd-amd64: sha256:c05fb58c16d2580f70cb914a1f8190eb8f1889c0b5fd4f859197b075a5c838a4
+    linux-386: sha256:6ac465e48cd85285309504db9969ed12cb0c2a9c0ea38e27478d285b10a9ad45
+    linux-amd64: sha256:b48b5a9a307aff627b7a3b4208948f2554fea740382c15607f2e90bec29d112f
+    linux-arm: sha256:d75643828687303f0f022bb6838fa1531faebccbfd63ff9782186b0f807a9802
+    linux-arm64: sha256:41b42540b0e807819053245667db383f93c243086078d3665af77cc5ff15822e
+    windows-386: sha256:b723524f08bfe9c49668ddf3ea3b142fa572f4d8a48ccc1bdaf4cae6411b434a
+    windows-amd64: sha256:7bfb5bc5f090825141bc6fbbc5b34b7e9c937e63ca641a58715d7af645c944bd
