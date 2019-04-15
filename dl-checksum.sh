@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=2.11.1
+VER=2.11.2
 DIR=~/Downloads
 MIRROR=https://github.com/github/hub/releases/download
 

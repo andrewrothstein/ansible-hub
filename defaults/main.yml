@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.11.1'
+hub_ver: '2.11.2'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -41,3 +41,13 @@ hub_checksums:
     linux-arm64: sha256:41b42540b0e807819053245667db383f93c243086078d3665af77cc5ff15822e
     windows-386: sha256:b723524f08bfe9c49668ddf3ea3b142fa572f4d8a48ccc1bdaf4cae6411b434a
     windows-amd64: sha256:7bfb5bc5f090825141bc6fbbc5b34b7e9c937e63ca641a58715d7af645c944bd
+  '2.11.2':
+    darwin-amd64: sha256:fe3dea37ec8281bb8e68c51b5577e904f0899a9dbf79d68029e1a1f0afca97b4
+    freebsd-386: sha256:3ef917c7bb22ba2703f19a89166c71b0544333285bf6d44dff1ce2c037166f58
+    freebsd-amd64: sha256:3e0698e3eba5efadcc43f1f688590d2e927008f40e960beced908d6bf656536f
+    linux-386: sha256:23eea7d01a7fbee7f3a1e2ad38e7541f9864d76ca04f09bf4947bf19cabc52b7
+    linux-amd64: sha256:7e7a57f5323d3d7d9637cad8ea8f584d7db67e040201d6d88275910f8e235a80
+    linux-arm: sha256:b4af853be26be23b3d9bad01a8a38aaaec60c7ac30b38f56d81c5df4be94f041
+    linux-arm64: sha256:2c36509ad564c13ef53555ae2e5d87ea12729caaaf95008377e797f2c2452977
+    windows-386: sha256:cfac3277683452f066ee48a2f321cc19b05b9936db911412eb7569cd1aaf8970
+    windows-amd64: sha256:837fa0a61f4d0d48a3f09ca8f3f6b013feb7e748b21434809998a14b4ae8ec89
