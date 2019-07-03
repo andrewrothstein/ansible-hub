@@ -11,8 +11,8 @@
       become: yes
       become_user: root
       get_url:
-        url: '{{ hub_tgz_url }}'
-        dest: /tmp/{{ hub_tgz }}
+        url: '{{ hub_archive_url }}'
+        dest: /tmp/{{ hub_archive }}
         mode: 0644
 
     - name: unarchive to install parent dir
@@ -20,7 +20,7 @@
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ hub_tgz }}
+        src: /tmp/{{ hub_archive }}
         dest: '{{ hub_install_parent_dir }}'
         creates: '{hub_install_dir }}'
   always:
@@ -28,7 +28,7 @@
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ hub_tgz }}
+        path: /tmp/{{ hub_archive }}
         state: absent
 
 - name: ensure target directories exist

@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.12.0'
+hub_ver: '2.12.1'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -70,3 +70,22 @@ hub_checksums:
     windows-386: sha256:631f3b36eb7a18a4bd69435c97a6523513503c1df6e39410ad8f87853688e267
     # https://github.com/github/hub/releases/download/v2.12.0/hub-windows-amd64-2.12.0.zip
     windows-amd64: sha256:dda7f35c3df4f98994455bc83c81fe935c614e3469a77fc244a40e563f1c6384
+  '2.12.1':
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-darwin-amd64-2.12.1.tgz
+    darwin-amd64: sha256:6b5fe7846ebcae902bc6930853b1cbd720133cc82839c3556c38736302e00297
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-freebsd-386-2.12.1.tgz
+    freebsd-386: sha256:e84d074eb4ddbc5371e74e0772a91297ff96851fba420970bd49788f331d1ecd
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-freebsd-amd64-2.12.1.tgz
+    freebsd-amd64: sha256:02f964411d53c82889911a0b6ab36e59910fbd6c519d48052218506c2bf921c9
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-linux-386-2.12.1.tgz
+    linux-386: sha256:0d123967dab48f52acb848a24299984d51945c5243689a6d5f1777a7d3a4203b
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-linux-amd64-2.12.1.tgz
+    linux-amd64: sha256:9d35580b519238eb0064adeac0be47ed7c3067daf5d78794a3854c0cfd83c0d8
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-linux-arm-2.12.1.tgz
+    linux-arm: sha256:21911e828afab6df008b0242ca91db2d97a788e7af8820c49fdd8f3e139d24b8
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-linux-arm64-2.12.1.tgz
+    linux-arm64: sha256:b30e6053e495262a6ba4460a7caa2471f34fd86c3cd79a2a3dc6414884233d9b
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-windows-386-2.12.1.zip
+    windows-386: sha256:af72d87f81d9b5bd797f7a5da1d2b9b8fb88745d85b2f8c2ea7c9bc854b26c76
+    # https://github.com/github/hub/releases/download/v2.12.1/hub-windows-amd64-2.12.1.zip
+    windows-amd64: sha256:089c727b8cc532ca2d21249e239b1a308cc78c6761955c8872f9dd8885deb810

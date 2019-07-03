@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=2.12.0
+VER=2.12.1
 DIR=~/Downloads
 MIRROR=https://github.com/github/hub/releases/download
 
@@ -11,10 +11,15 @@ dl()
     FILE=hub-${OS}-${PLATFORM}-${VER}.${SUFFIX}
     DLFILE=$DIR/$FILE
     URL=$MIRROR/v${VER}/$FILE
-    wget -q -O $DLFILE $URL
-    printf "# %s\n%s-%s: sha256:%s\n" $URL $OS $PLATFORM `sha256sum $DLFILE | awk '{print $1}'`
+    if [ ! -e $DLFILE ]
+    then
+        wget -q -O $DLFILE $URL
+    fi
+    printf "    # %s\n" $URL
+    printf "    %s-%s: sha256:%s\n" $OS $PLATFORM `sha256sum $DLFILE | awk '{print $1}'`
 }
 
+printf "  '%s':\n" $VER
 dl darwin amd64 tgz
 dl freebsd 386 tgz
 dl freebsd amd64 tgz
