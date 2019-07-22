@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.12.1'
+hub_ver: '2.12.3'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -89,3 +89,22 @@ hub_checksums:
     windows-386: sha256:af72d87f81d9b5bd797f7a5da1d2b9b8fb88745d85b2f8c2ea7c9bc854b26c76
     # https://github.com/github/hub/releases/download/v2.12.1/hub-windows-amd64-2.12.1.zip
     windows-amd64: sha256:089c727b8cc532ca2d21249e239b1a308cc78c6761955c8872f9dd8885deb810
+  '2.12.3':
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-darwin-amd64-2.12.3.tgz
+    darwin-amd64: sha256:44b9ac23c3d0d34804ad8e0162f27e57c48db278e53c5a10093640f03b79bea3
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-freebsd-386-2.12.3.tgz
+    freebsd-386: sha256:1ded15d32089d770b9ae2aab5ca95bf75fdfb43fcb4cf78967a7de0d6a1f6402
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-freebsd-amd64-2.12.3.tgz
+    freebsd-amd64: sha256:c2962fcdb7aec8fec6849be148f574135f1700d49b57e70330cf896fee7ad093
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-linux-386-2.12.3.tgz
+    linux-386: sha256:17c754d90c1bc9c0b583f04742901bae70ee71ad7727c4a67b06703749bb5549
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-linux-amd64-2.12.3.tgz
+    linux-amd64: sha256:c0e9ce0f878cfe053aeabc8f99f105acba38ab08909411f3dec82801a76b6f8d
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-linux-arm-2.12.3.tgz
+    linux-arm: sha256:1d5f5e7ffd3bd21cfccd7965d7f1dcb487ce739ce63ed3d9a7e690947e9ce0cc
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-linux-arm64-2.12.3.tgz
+    linux-arm64: sha256:375a131d71db93b26fa5ee0855fa5fdccdae27275bdd921b00201c1dcd7797e4
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-windows-386-2.12.3.zip
+    windows-386: sha256:a9705a8d220f2d32965e7897efcb155b048e24fb6751292de8f85729c2924b59
+    # https://github.com/github/hub/releases/download/v2.12.3/hub-windows-amd64-2.12.3.zip
+    windows-amd64: sha256:b76cb18f20c1adc91d265a986a5125f27b8170bdf1c9707051aff0646d232c3f
