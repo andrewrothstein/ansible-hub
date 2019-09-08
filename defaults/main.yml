@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.12.3'
+hub_ver: '2.12.4'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -108,3 +108,18 @@ hub_checksums:
     windows-386: sha256:a9705a8d220f2d32965e7897efcb155b048e24fb6751292de8f85729c2924b59
     # https://github.com/github/hub/releases/download/v2.12.3/hub-windows-amd64-2.12.3.zip
     windows-amd64: sha256:b76cb18f20c1adc91d265a986a5125f27b8170bdf1c9707051aff0646d232c3f
+  '2.12.4':
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-darwin-amd64-2.12.4.tgz
+    darwin-amd64: sha256:3a34aa09be6b4e7f6edf5cab3694386c3fad1c375ce00c3cf580a6e652d13fba
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-freebsd-386-2.12.4.tgz
+    freebsd-386: sha256:ab6f2939ae6f11d13127ad7f08793930aab91b09a0d923c6e91ea16606814f9a
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-freebsd-amd64-2.12.4.tgz
+    freebsd-amd64: sha256:6d5e275a9128e2cde9309e2c4a26d617ed97515736bdc7747b2a30ea7e0c47cb
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-linux-386-2.12.4.tgz
+    linux-386: sha256:17fd23f7b426f1a152267984f4ff9d8ef2e0ff84c552c0eb398084b6375be9c5
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-linux-amd64-2.12.4.tgz
+    linux-amd64: sha256:f51831b9bf357f6b64d46b98eb2066bf6d968fb060d6da9a800b1f2523e2e2c9
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-linux-arm-2.12.4.tgz
+    linux-arm: sha256:5aa8a227b2f16f276c2c77107b98a397e591adc019b9455744b75adeb982e692
+    # https://github.com/github/hub/releases/download/v2.12.4/hub-linux-arm64-2.12.4.tgz
+    linux-arm64: sha256:6000dcf0bfec8006c29257a8b09af361c498406bad48bed27a6d50a6e1d904af

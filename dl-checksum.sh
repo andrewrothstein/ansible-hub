@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=2.12.3
+VER=2.12.4
 DIR=~/Downloads
 MIRROR=https://github.com/github/hub/releases/download
 
@@ -27,7 +27,5 @@ dl linux 386 tgz
 dl linux amd64 tgz
 dl linux arm tgz
 dl linux arm64 tgz
-dl windows 386 zip
-dl windows amd64 zip
-
-
+#dl windows 386 zip
+#dl windows amd64 zip
