@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.12.4'
+hub_ver: '2.12.7'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -123,3 +123,22 @@ hub_checksums:
     linux-arm: sha256:5aa8a227b2f16f276c2c77107b98a397e591adc019b9455744b75adeb982e692
     # https://github.com/github/hub/releases/download/v2.12.4/hub-linux-arm64-2.12.4.tgz
     linux-arm64: sha256:6000dcf0bfec8006c29257a8b09af361c498406bad48bed27a6d50a6e1d904af
+  '2.12.7':
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-darwin-amd64-2.12.7.tgz
+    darwin-amd64: sha256:0768c69af821db470ac27bf7712b6efe634a6ed058c1bcacc6a924558ada4d21
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-freebsd-386-2.12.7.tgz
+    freebsd-386: sha256:e1978e361f7ec2adf7d00c510c4b67d97f8ab81d02aaaaa3f37256894888f2e2
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-freebsd-amd64-2.12.7.tgz
+    freebsd-amd64: sha256:598a22f9188766e91ad5ff978800363166e815899fef6774a26b855f8bead426
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-linux-386-2.12.7.tgz
+    linux-386: sha256:a0f11b78b9dffa58e95634fb0df1627d11e905440ac3b2d954964699a5c60f6c
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-linux-amd64-2.12.7.tgz
+    linux-amd64: sha256:5ba5ea455659f02c162553bc8b01fb8a6ccca3c21f8a80b054cce02ed28a36a2
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-linux-arm-2.12.7.tgz
+    linux-arm: sha256:d2bfd14997f99e3e16251ffe613fe722cddcd0ed9e8d31267a6aa37464e3f84a
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-linux-arm64-2.12.7.tgz
+    linux-arm64: sha256:81da7b87a8dac657cbf99101df922ca59dcfc22059d3b992b0ef6398e375a866
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-windows-386-2.12.7.zip
+    windows-386: sha256:77d4cbd555b18c06c3f6cf17481872c16e1221aca2dfaa8b5f0ab2d5cc01a935
+    # https://github.com/github/hub/releases/download/v2.12.7/hub-windows-amd64-2.12.7.zip
+    windows-amd64: sha256:c9aa5fb35910458760ab35c9a5facf9277c4d031e55aed0a123c34159b5c7c59

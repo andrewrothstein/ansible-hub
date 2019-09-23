@@ -1,22 +1,22 @@
 #!/usr/bin/env sh
-VER=2.12.4
+VER=2.12.7
 DIR=~/Downloads
 MIRROR=https://github.com/github/hub/releases/download
 
 dl()
 {
-    OS=$1
-    PLATFORM=$2
-    SUFFIX=$3
-    FILE=hub-${OS}-${PLATFORM}-${VER}.${SUFFIX}
-    DLFILE=$DIR/$FILE
-    URL=$MIRROR/v${VER}/$FILE
-    if [ ! -e $DLFILE ]
+    local os=$1
+    local arch=$2
+    local suffix=$3
+    local file=hub-${os}-${arch}-${VER}.${suffix}
+    local dlfile=$DIR/$file
+    local url=$MIRROR/v${VER}/$file
+    if [ ! -e $dlfile ];
     then
-        wget -q -O $DLFILE $URL
+        wget -q -O $dlfile $url
     fi
-    printf "    # %s\n" $URL
-    printf "    %s-%s: sha256:%s\n" $OS $PLATFORM `sha256sum $DLFILE | awk '{print $1}'`
+    printf "    # %s\n" $url
+    printf "    %s-%s: sha256:%s\n" $os $arch `sha256sum $dlfile | awk '{print $1}'`
 }
 
 printf "  '%s':\n" $VER
@@ -27,5 +27,5 @@ dl linux 386 tgz
 dl linux amd64 tgz
 dl linux arm tgz
 dl linux arm64 tgz
-#dl windows 386 zip
-#dl windows amd64 zip
+dl windows 386 zip
+dl windows amd64 zip
