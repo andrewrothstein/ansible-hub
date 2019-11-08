@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.12.8'
+hub_ver: '2.13.0'
 hub_platform: linux-amd64
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
@@ -161,3 +161,22 @@ hub_checksums:
     windows-386: sha256:effadda27c68a02fca4cbfb18bbe04916ccf9f52d3c89f84d532c4454f75bdba
     # https://github.com/github/hub/releases/download/v2.12.8/hub-windows-amd64-2.12.8.zip
     windows-amd64: sha256:2cc89c0d9d0f87b9f5d182b785b7ec3565cee17061972e3f5c66efc99893a6c1
+  '2.13.0':
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-darwin-amd64-2.13.0.tgz
+    darwin-amd64: sha256:268f7895bdb2fc7aa87bca60ef64a5c1ec29d5abab29cd2bfbcd6274d9e5c489
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-freebsd-386-2.13.0.tgz
+    freebsd-386: sha256:f76102a32d857e47f0611389de35f799d9e4893463c05ed992add570342fba8d
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-freebsd-amd64-2.13.0.tgz
+    freebsd-amd64: sha256:2c2a74bc4c9e9966f41284b15358e7c122f082390dd020f7a8ad82c9bcbdc594
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-linux-386-2.13.0.tgz
+    linux-386: sha256:c0711250ac067c4bc1ca9de961115c47d303c1fe27838c10b1130d313b896f02
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-linux-amd64-2.13.0.tgz
+    linux-amd64: sha256:e0f117d553f771938ee594ef280e1b2edf3feebab7c7cb55eab0240a76928652
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-linux-arm-2.13.0.tgz
+    linux-arm: sha256:80ee338cdd89c435f0a602a15f895ca6c505bf838a7d82f1fd5c31c2352923f5
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-linux-arm64-2.13.0.tgz
+    linux-arm64: sha256:6558dddbf16418235aa6b307f3dc05abf8f7cf2f1dabd80b4deb664698120366
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-windows-386-2.13.0.zip
+    windows-386: sha256:3ea802eab519e51451cf3d11bc35fa27a9082e82fa137eb443271c7cba4a7057
+    # https://github.com/github/hub/releases/download/v2.13.0/hub-windows-amd64-2.13.0.zip
+    windows-amd64: sha256:8d18d682a4f3be138f6ca958f976b31c1c8d6a829b477df6c084f38e1e3d0e7d
