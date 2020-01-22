@@ -1,4 +1,5 @@
 ---
+hub_platform: '{{ hub_os }}-{{ hub_arch }}'
 hub_archive: 'hub-{{ hub_platform }}-{{ hub_ver }}.{{ hub_archive_suffix | default("tgz") }}'
 
 hub_archive_url: 'https://github.com/github/hub/releases/download/v{{ hub_ver }}/{{ hub_archive }}'

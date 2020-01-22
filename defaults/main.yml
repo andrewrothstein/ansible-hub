@@ -1,6 +1,8 @@
 ---
-hub_ver: '2.13.0'
-hub_platform: linux-amd64
+hub_ver: '2.14.0'
+hub_os: linux
+hub_arch: amd64
+
 hub_install_parent_dir: /usr/local
 hub_privilege_escalate: True
 hub_installer: tgz
@@ -180,3 +182,22 @@ hub_checksums:
     windows-386: sha256:3ea802eab519e51451cf3d11bc35fa27a9082e82fa137eb443271c7cba4a7057
     # https://github.com/github/hub/releases/download/v2.13.0/hub-windows-amd64-2.13.0.zip
     windows-amd64: sha256:8d18d682a4f3be138f6ca958f976b31c1c8d6a829b477df6c084f38e1e3d0e7d
+  '2.14.0':
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-darwin-amd64-2.14.0.tgz
+    darwin-amd64: sha256:de07163ad8e6216d373a4059f84c39750b870fa6f5049d5c3348bb61d60ebe3a
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-freebsd-386-2.14.0.tgz
+    freebsd-386: sha256:7472102e77d3aeb9629f0cc2278d08da601519234024cc7dd6d338423ce77772
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-freebsd-amd64-2.14.0.tgz
+    freebsd-amd64: sha256:c1a8c1e2ae42bafffc70b4e36776bf0eaa6c7fd8c9721d596900989ea64a24cf
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-linux-386-2.14.0.tgz
+    linux-386: sha256:86e9ff43630ffbac849cb31fb6cf1d9a2b387c840c2e796064b5ef4b40100151
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-linux-amd64-2.14.0.tgz
+    linux-amd64: sha256:48b7a3da8c54c1373848074c59a2233c4874f68ed362fc8d3d251423d02496fe
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-linux-arm-2.14.0.tgz
+    linux-arm: sha256:f051212511a92493a77c433a2b75c82879f9061b2569a9f9341b884e5746239c
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-linux-arm64-2.14.0.tgz
+    linux-arm64: sha256:b1719353dab1a0e135b54703fdabd580cafd468ad3e05c6058b5b3ff2e0e8c47
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-windows-386-2.14.0.zip
+    windows-386: sha256:3e10ccea3a96f60e939944e8d7f0abdfd28a4e62e1b0112895ef00ca946ec5dc
+    # https://github.com/github/hub/releases/download/v2.14.0/hub-windows-amd64-2.14.0.zip
+    windows-amd64: sha256:d3bf4365f36ee14975b358a1d16952858708a21bc5a30ee9f8235a7c3d349973
