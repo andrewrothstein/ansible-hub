@@ -1,5 +1,5 @@
 ---
-hub_ver: '2.14.0'
+hub_ver: '2.14.2'
 hub_os: linux
 hub_arch: amd64
 
@@ -201,3 +201,22 @@ hub_checksums:
     windows-386: sha256:3e10ccea3a96f60e939944e8d7f0abdfd28a4e62e1b0112895ef00ca946ec5dc
     # https://github.com/github/hub/releases/download/v2.14.0/hub-windows-amd64-2.14.0.zip
     windows-amd64: sha256:d3bf4365f36ee14975b358a1d16952858708a21bc5a30ee9f8235a7c3d349973
+  '2.14.2':
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-darwin-amd64-2.14.2.tgz
+    darwin-amd64: sha256:7f4a8a739968fbeb77deca29b2b85e1fe9f4a8993cda85d3139fa36a2a6deaa7
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-freebsd-386-2.14.2.tgz
+    freebsd-386: sha256:bd921dcdf324260ec54c0a4312d028617599f146c58f6e6d78c208b6147d41cc
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-freebsd-amd64-2.14.2.tgz
+    freebsd-amd64: sha256:b2adbd34613ec33ca6476772e1ba5b60ef12af8cfaa9d43c46400379ad3ec1df
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-linux-386-2.14.2.tgz
+    linux-386: sha256:6069d11b734afd99c82bdac7573ab32e9a35353a33787974c9025787beddeac4
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-linux-amd64-2.14.2.tgz
+    linux-amd64: sha256:74d95fdfb3c78c8af4e2025b04b916ad905ab99a361778500d58269847c7922d
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-linux-arm-2.14.2.tgz
+    linux-arm: sha256:234fa4cfcfdf1fc4051b27116fd1351a1741cfec556fa227506708ba4997bdeb
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-linux-arm64-2.14.2.tgz
+    linux-arm64: sha256:53670fe3ed3d590dc1194257497c7b27b35daf2bfb5b497b1a49e50b3f5a0e61
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-windows-386-2.14.2.zip
+    windows-386: sha256:16f755b80b9c0da080d4fa613670e36d7b78f4595ce096a84ffd7ac3d324ec64
+    # https://github.com/github/hub/releases/download/v2.14.2/hub-windows-amd64-2.14.2.zip
+    windows-amd64: sha256:2ad771ff5e5e47c8d48aa22f6852ebef87e1fe0f53a1194ddcbe615a9ddbc59e
